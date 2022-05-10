@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:titleTextColor="#008888">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/item1"
+                android:background="@drawable/food_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Item1"
+                    android:textColor="@color/white"
+
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/item2"
+                android:background="@drawable/food_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Item2"
+                    android:textColor="@color/white"
+
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/item3"
+                android:background="@drawable/food_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Item3"
+                    android:textColor="@color/white"
+
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/item4"
+                android:background="@drawable/food_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Item4"
+                    android:textColor="@color/white"
+
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/item5"
+                android:background="@drawable/food_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Item5"
+                    android:textColor="@color/white"
+
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/item6"
+                android:background="@drawable/food_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Item6"
+                    android:textColor="@color/white"
+
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/item7"
+                android:background="@drawable/food_back"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Item7"
+                    android:textColor="@color/white"
+
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <io.armcha.elasticview.ElasticView
+        android:id="@+id/cart_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:flexibility="5"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_name"
+            android:contentDescription="Add To Cart"
+            android:layout_gravity="center"/>
+
+    </io.armcha.elasticview.ElasticView>
+
+</RelativeLayout>
